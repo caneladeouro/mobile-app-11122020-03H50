@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(230, 240, 230);
+}
+
+mat-toolbar .example-icon {
+  margin: 5px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 99999999px;
+  -webkit-border-radius: 99999999px;
+  -moz-border-radius: 99999999px;
+  -ms-border-radius: 99999999px;
+  -o-border-radius: 99999999px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}

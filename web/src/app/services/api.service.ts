@@ -1,0 +1,8 @@
+// import { Injectable } from '@angular/core';
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://localhost:3200',
+});
+
+export default api;

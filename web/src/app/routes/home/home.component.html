@@ -1,0 +1,58 @@
+<mat-toolbar class="toolbar">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span routerLink="/home">My App</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<main>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome</mat-label>
+      <input
+        name="name"
+        [(ngModel)]="name"
+        #ctrl="ngModel"
+        matInput
+        placeholder=""
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input name="email" matInput [(ngModel)]="email" placeholder="" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Senha</mat-label>
+      <input
+        name="password"
+        type="password"
+        [(ngModel)]="password"
+        matInput
+        placeholder=""
+      />
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="register()">Cadastra-se</button>
+  </form>
+</main>
