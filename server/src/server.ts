@@ -5,12 +5,12 @@ import routes from "./routes";
 import errorHandler from "./Errors/handler";
 
 import "./Database/connectionDatabase";
-import "reflect-metadata";
 import "express-async-errors";
+import "reflect-metadata";
 
 const server = express();
 
-// server.use(cors());
+server.use(cors());
 server.use(express.json());
 
 server.use("/", routes);

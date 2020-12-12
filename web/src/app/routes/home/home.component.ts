@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     data.append('nm_email', this.email);
     data.append('ds_password', this.password);
 
-    await api.post('create', data);
+    await api.post('/create', data);
     alert(this.name + this.email + this.password);
   }
 }
