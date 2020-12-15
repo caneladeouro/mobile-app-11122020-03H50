@@ -35,6 +35,8 @@ export default {
       ds_password,
     };
 
+    console.log(data);
+
     const schema = Yup.object().shape({
       nm_user: Yup.string().required(),
       nm_email: Yup.string().required(),
