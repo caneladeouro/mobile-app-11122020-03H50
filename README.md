@@ -24,6 +24,7 @@
 - Models
 - Migrations
 - Gerenciamento de rotas
+- Async Await
 
 ## Como usar o Aplicativo
 ### Backend
@@ -31,7 +32,8 @@
 2. Abra a pasta server
 3. Dê ``npm install`` ou ``yarn install``
 4. Inicie o projeto com ``npm run start`` ou ``yarn start``
-5. Abra o software cliente (Pode ser um navegador como o Google Chrome, ou o Insominia por exemplo)
+5. Dê ``npm run typeorm migration:run`` ou ``yarn typeorm migration:run``
+6. Abra o software cliente (Pode ser um navegador como o Google Chrome, ou o Insominia por exemplo)
 
 Modelo da resposta (rota ``/index``)  
 ``
